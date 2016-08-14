@@ -42,10 +42,10 @@ else
 endif
 set cursorline
 
-if (exists('+colorcolumn'))
-    set colorcolumn=80
-    highlight ColorColumn ctermbg=9
-endif
+"if (exists('+colorcolumn'))
+"    set colorcolumn=80
+"    highlight ColorColumn ctermbg=9
+"endif
 
 if $TERM == "xterm-256color"
   set t_Co=256
@@ -104,4 +104,4 @@ let g:easytags_suppress_ctags_warning = 1
 " majutsushi/tagbar
 " Open/close tagbar with \b
 nmap <silent> <leader>b :TagbarToggle<CR>
-autocmd BufEnter * nested :call tagbar#autoopen(0)"
+"autocmd BufEnter * nested :call tagbar#autoopen(0)"
